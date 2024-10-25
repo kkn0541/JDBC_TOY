@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+
+
+<entry key="StudentFullView">
+SELECT STD_NO,STD_NAME,STD_AGE,STD_GENDER,STD_SCORE
+FROM TB_STUDENT
+ORDER BY STD_NO
+</entry>
+
+
+<entry key="studentAdd" >
+INSERT INTO TB_STUDENT
+VALUES(SEQ_TODO_NO.NEXTVAL,?,?,?,?)
+</entry>
+
+<entry key ="studentDetailView">
+SELECT STD_NO,STD_NAME,STD_AGE,STD_GENDER,STD_SCORE
+FROM TB_STUDENT 
+WHERE STD_NO=?
+</entry>
+
+<entry key ="stdudentDelete">
+DELETE FROM TB_STUDENT
+WHERE STD_NO=?
+</entry>
+
+<entry key ="studentUpdate">
+UPDATE TB_STUDENT 
+SET STD_NAME=?,
+	STD_AGE=?,
+	STD_SCORE=?
+WHERE STD_NO=?
+
+</entry>
+
+
+
+</properties>

@@ -1,0 +1,156 @@
+/* 전체 컨테이너 스타일 */
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+/* 상세 정보 컨테이너 */
+.detail-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+/* 헤더 스타일 */
+.detail-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.detail-header h1 {
+  color: #343a40;
+  font-size: 2em;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* 정보 그룹 스타일 */
+.info-group {
+  margin-bottom: 25px;
+}
+
+/* 라벨 스타일 */
+.info-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #495057;
+  font-weight: 500;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* 입력 필드 스타일 */
+.info-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+}
+
+.info-group input:focus {
+  outline: none;
+  border-color: #4dabf7;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.1);
+}
+
+/* 버튼 그룹 스타일 */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+
+/* 버튼 공통 스타일 */
+.button-group button {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* 수정 버튼 스타일 */
+.update-btn {
+  background-color: #4dabf7;
+  color: white;
+}
+
+.update-btn:hover {
+  background-color: #3793dd;
+}
+
+/* 취소 버튼 스타일 */
+.cancel-btn {
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+.cancel-btn:hover {
+  background-color: #dee2e6;
+}
+
+/* 삭제 버튼 스타일 */
+.delete-btn {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #fa5252;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .detail-container {
+      padding: 25px;
+  }
+
+  .button-group {
+      flex-direction: column;
+  }
+
+  .button-group button {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .detail-header h1 {
+      font-size: 1.5em;
+  }
+}
+
+/* 애니메이션 효과 */
+.detail-container {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

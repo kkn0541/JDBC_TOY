@@ -1,0 +1,133 @@
+/* 전체 컨테이너 스타일 */
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* 폼 컨테이너 스타일 */
+.form-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* 페이지 제목 스타일 */
+.page-title {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* 입력 그룹 스타일 */
+.input-group {
+  margin-bottom: 20px;
+}
+
+/* 라벨 스타일 */
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 500;
+}
+
+/* 입력 필드 스타일 */
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* 입력 필드 포커스 스타일 */
+.input-group input:focus,
+.input-group select:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+/* 버튼 그룹 스타일 */
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+/* 제출 버튼 스타일 */
+.submit-btn {
+  flex: 1;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* 취소 버튼 스타일 */
+.cancel-btn {
+  flex: 1;
+  padding: 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* 버튼 호버 효과 */
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.cancel-btn:hover {
+  background-color: #da190b;
+}
+
+/* 필수 입력 필드 표시 */
+input:required,
+select:required {
+  background-image: radial-gradient(#f00 15%, transparent 16%);
+  background-size: 1em 1em;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 480px) {
+  .form-container {
+      padding: 20px;
+  }
+
+  .button-group {
+      flex-direction: column;
+  }
+
+  .page-title {
+      font-size: 1.5em;
+  }
+}
+
+/* 플레이스홀더 스타일 */
+::placeholder {
+  color: #999;
+  opacity: 0.8;
+}
